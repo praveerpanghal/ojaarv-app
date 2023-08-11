@@ -1,16 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 
 // Import your components for different pages
-import Home from './components/Home';
-import Services from './components/Services';
-import ContactUs from './components/ContactUs';
+import Home from './components/Home/Home';
+import Services from './components/Services/Services';
+import ContactUs from './components/ContactUs/ContactUs';
 
 function App() {
   return (
     <Router basename="/ojaarv-app"> 
-      <div className="App">
+     
         <nav>
           <ul>
             <li>
@@ -24,19 +24,12 @@ function App() {
             </li>
           </ul>
         </nav>
-
-        <Switch>
-          <Route path="/services">
-            <Services />
-          </Route>
-          <Route path="/contactus">
-            <ContactUs />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contactus" element={<ContactUs />} />
+      </Routes>
+  
     </Router>
   );
 }
