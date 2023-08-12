@@ -14,20 +14,20 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/ojaarv-app/">Home</Link>
             </li>
             <li>
-              <Link to="/services">Services</Link>
+              <Link to="/ojaarv-app/services">Services</Link>
             </li>
             <li>
-              <Link to="/contactus">Contact Us</Link>
+              <Link to="/ojaarv-app/contactus">Contact Us</Link>
             </li>
           </ul>
         </nav>
         <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/ojaarv-app/" element={<Home />} />
+        <Route path="/ojaarv-app/services" element={<Services />} />
+        <Route path="/ojaarv-app/contactus" element={<ContactUs />} />
       </Routes>
   
     </Router>
