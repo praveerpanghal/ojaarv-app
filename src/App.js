@@ -9,7 +9,8 @@ import ContactUs from './components/ContactUs/ContactUs';
 
 function App() {
   return (
-    <Router basename="/ojaarv-app"> 
+    // <Router basename="/ojaarv-app"> 
+    <Router> 
      
         <nav>
           <ul>
