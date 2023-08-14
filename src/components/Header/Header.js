@@ -3,6 +3,8 @@ import { Link, Routes, Route } from 'react-router-dom';
 import Home from '../Home/Home';
 import Services from '../Services/Services';
 import ContactUs from '../ContactUs/ContactUs';
+import AboutUs from '../AboutUs/AboutUs';
+import OnlineTraining from '../OnlineTraining/OnlineTraining';
 import 'bootstrap/dist/css/bootstrap.css'; // Import Bootstrap CSS
 
 function Header() {
@@ -23,7 +25,13 @@ function Header() {
               <Link className="nav-link" to="/services">Services</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contactus">Contact Us</Link>
+              <Link className="nav-link" to="/online-training">Online Training</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/about-us">AboutUs</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/contact-us">Contact Us</Link>
             </li>
           </ul>
         </div>
@@ -31,7 +39,9 @@ function Header() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/online-training" element={<OnlineTraining />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
     </header>
   );

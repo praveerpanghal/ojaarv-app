@@ -1,0 +1,10 @@
+.contact-wrapper {
+    max-width: 800px; /* Set your desired maximum width */
+    margin: 0 auto;   /* Center the content horizontally */
+    padding: 20px;    /* Add some padding for spacing */
+  }
+  .contact-heading{
+    text-align: left;
+    font-size: 25px;
+  }
+  
