@@ -28,10 +28,10 @@ function Header() {
               <Link className="nav-link" to="/online-training">Online Training</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about-us">AboutUs</Link>
+              <Link className="nav-link" to="/about-us">About US</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact-us">Contact Us</Link>
+              <Link className="nav-link" to="/contact-us">Contact US</Link>
             </li>
           </ul>
         </div>
